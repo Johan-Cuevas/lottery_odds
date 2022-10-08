@@ -1,5 +1,10 @@
 import math
- 
+import requests
+from bs4 import BeautifulSoup
+
+
+soup = BeautifulSoup(html_doc, 'html.parser')
+print(soup.prettify())
 
 # math for the powerball lottery
 # five_nums = math.comb(69, 5)
